@@ -19,6 +19,17 @@ body {
             content: 'Loading...';
             color: #00ffff;
             border-bottom: 18px solid #00ffff;
+            overflow: hidden;
+            animation: loading 10s infinite linear;
         }
+    }
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
     }
 }

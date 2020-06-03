@@ -29,5 +29,26 @@ body h1::before {
   content: 'Loading...';
   color: #00ffff;
   border-bottom: 18px solid #00ffff;
+  overflow: hidden;
+  -webkit-animation: loading 10s infinite linear;
+          animation: loading 10s infinite linear;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
